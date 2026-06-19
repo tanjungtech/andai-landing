@@ -4,7 +4,7 @@
 
 # Run and deploy your AI Studio app
 
-Please change this
+I will update the readme
 
 This contains everything you need to run your app locally.
 
