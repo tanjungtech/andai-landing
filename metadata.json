@@ -1,0 +1,6 @@
+{
+  "name": "ANDAI",
+  "description": "Startup Execution Partner helping founders transform ideas into profitable businesses through Product Discovery, Founding Partner, and Startup Optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
