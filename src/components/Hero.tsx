@@ -15,16 +15,16 @@ export default function Hero() {
   };
 
   const content = {
-    badge: language === 'id' ? 'Mitra Arsitektur & Rekayasa Venture' : 'Venture Architecture & Engineering Partner',
-    titleStart: language === 'id' ? 'Ubah Ide Anda Menjadi ' : 'Transform Your Idea Into A ',
-    titleGradient: language === 'id' ? 'Startup Menguntungkan' : 'Profitable Startup',
-    titleEnd: language === 'id' ? ' dengan Percaya Diri' : ' with Confidence',
+    badge: language === 'id' ? 'Partner Pengembangan Startup' : 'Your Startup Execution Partner',
+    titleStart: language === 'id' ? 'Buat Ide Kamu Jadi ' : 'Transform Your Idea Into ',
+    titleGradient: language === 'id' ? 'Startup yang Menguntungkan' : 'A Profitable Startup',
+    // titleEnd: language === 'id' ? '' : ' with Confidence',
     subtitle: language === 'id' 
-      ? 'ANDAI membantu founder mendefinisikan dan mengembangkan startup Anda melalui validasi efektif dan eksekusi efisien agar hasrat Anda tidak sia-sia.'
-      : 'ANDAI helps founders define and grow your startup through effective validation and efficient execution so you don’t waste your passion.',
+      ? 'ANDAI membantu founder mengembangkan ide menjadi startup mesin uang. Berpartner untuk eksekusi lebih cepat dan resiko lebih rendah.'
+      : 'Got a killer startup idea but not sure what’s next? ANDAI helps you build startup faster, cost-saving, without losing that crucial human touch.',
     ctaDiscover: language === 'id' ? 'Temukan Startup Anda' : 'Discover Your Startup',
-    ctaBuild: language === 'id' ? 'Mulai Bangun' : 'Let’s Build',
-    explore: language === 'id' ? 'Pelajari Kerangka Kerja Eksekusi' : 'Explore Execution Framework'
+    ctaBuild: language === 'id' ? 'Mulai Jalan' : 'Let’s Build',
+    explore: language === 'id' ? 'Pelajari Konsep Eksekusi' : 'Explore Execution Framework'
   };
 
   return (
@@ -58,7 +58,7 @@ export default function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500">
             {content.titleGradient}
           </span>
-          {content.titleEnd}
+          {/* {content.titleEnd} */}
         </motion.h1>
 
         {/* Hero Subtitle */}

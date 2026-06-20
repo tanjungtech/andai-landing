@@ -45,7 +45,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
     { label: 'Contact', id: 'contact-section' }
   ];
 
-  const buildButtonLabel = language === 'id' ? 'Mulai Bangun' : 'Let’s build';
+  const buildButtonLabel = language === 'id' ? 'Mulai Jalan' : 'Let’s Build';
 
 
   return (

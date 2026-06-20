@@ -24,45 +24,45 @@ export default function HeroWorkflow() {
       name: 'Ide',
       icon: Lightbulb,
       color: 'from-blue-500 to-indigo-500',
-      description: 'Percikan inovasi. ANDAI bertindak sebagai filter penasihat kritis, membantu Anda menyusun logika, menyempurnakan hipotesis inti, dan memetakan keselarasan masalah dengan pasar.',
-      impact: 'Menghilangkan ambiguitas konseptual',
-      highlight: 'Pencarian Produk & Penasihat'
+      description: 'Mengarahkan inovasi. ANDAI membantu merapikan konsep startup, menemukan masalah pengguna, dan menghadirkan produk sesuai kebutuhan pasar.',
+      impact: 'Produk yang tidak jelas',
+      highlight: 'Perumusan Produk Startup'
     },
     {
       id: 'validation',
       name: 'Validasi',
       icon: ShieldCheck,
       color: 'from-indigo-500 to-purple-500',
-      description: 'Pembuktian mutlak. Kami menjalankan wawancara pengguna terstruktur, eksperimen validasi, dan menyusun matriks persona pengguna yang jelas untuk menjamin permintaan pasar.',
-      impact: 'Mencegah pembuatan produk yang tidak diinginkan',
-      highlight: 'Cakupan MVP Berbasis Data'
+      description: 'Kami memetakan pengguna produk dan mengklasifikasikan persona. Ide diolah menjadi rencana sejumlah aplikasi fitur tunggal untuk mengatasi masalah pengguna sesuai persona.',
+      impact: 'Aplikasi tanpa pengguna',
+      highlight: 'Cakupan MVP untuk Divalidasi'
     },
     {
       id: 'execution',
       name: 'Eksekusi',
       icon: Cpu,
       color: 'from-purple-500 to-pink-500',
-      description: 'Keunggulan rekayasa. Kami menerapkan arsitektur produk tingkat lanjut yang siap produksi dengan kode bersih, model basis data yang kokoh, dan struktur sistem berkualitas tinggi.',
-      impact: 'Pengiriman rekayasa Founding Partner',
-      highlight: 'Peluncuran MVP Tanpa Utang Teknis'
+      description: 'Kami menjadi partner teknis untuk peluncuran startup. Pengembangan cepat, berbasis pada pencarian fitur yang benar-benar dibutuhkan pengguna.',
+      impact: 'Produk gagal atau terlambat untuk rilis',
+      highlight: 'Peluncuran MVP Langsung ke Pasar'
     },
     {
       id: 'optimization',
-      name: 'Optimasi',
+      name: 'Optimization',
       icon: Zap,
       color: 'from-pink-500 to-amber-500',
-      description: 'Efisiensi operasional. Kami memperbaiki hambatan pengiriman produk, melakukan peninjauan arsitektur penuh, dan membimbing tim internal untuk mempercepat siklus peluncuran fitur.',
-      impact: 'Mengurangi beban biaya pengembangan',
-      highlight: 'Penyesuaian Pengiriman Berkelanjutan'
+      description: 'Memperbaiki hambatan dalam pengembangan produk dan meningkatkan performa aplikasi. Berkonsultasi dengan para ahli di bidang teknis ataupun bisnis',
+      impact: 'Aplikasi error, bisnis mentok',
+      highlight: 'Mempercepat kemajuan'
     },
     {
       id: 'growth',
-      name: 'Pertumbuhan',
+      name: 'Scale-up',
       icon: TrendingUp,
       color: 'from-amber-500 to-emerald-500',
-      description: 'Skala tanpa batas. Memindahkan arsitektur teknis ke tingkat lanjut, melatih talenta jangka panjang, dan memperkuat layanan untuk mendukung lalu lintas pengguna yang tinggi.',
-      impact: 'Menyusun arsitektur skala besar',
-      highlight: 'Penguatan Pasar Produk'
+      description: 'Menuju level aplikasi yang lebih canggih, menyiapkan fondasi tim teknikal berkualitas, dan siap melayani lebih banyak pengguna.',
+      impact: 'Startup gagal menjadi mesin uang',
+      highlight: 'Produk Terus Berkembang'
     }
   ] : [
     {
@@ -70,7 +70,7 @@ export default function HeroWorkflow() {
       name: 'Idea',
       icon: Lightbulb,
       color: 'from-blue-500 to-indigo-500',
-      description: 'The spark of innovation. ANDAI acts as a critical advisory filter, helping you structure logic, refine core hypotheses, and map problem-market alignment.',
+      description: 'ANDAI structures your concept, refines core hypotheses, and map problem-market alignment.',
       impact: 'Eliminates conceptual ambiguity',
       highlight: 'Product Discovery & Advisory'
     },
@@ -79,36 +79,36 @@ export default function HeroWorkflow() {
       name: 'Validation',
       icon: ShieldCheck,
       color: 'from-indigo-500 to-purple-500',
-      description: 'The ultimate proof. We run structured user interviews, validation experiments, and construct clear user persona matrices to guarantee market demand.',
+      description: 'We construct clear user persona matrices to guarantee market demand. We devise a handful of features to be validated by the market',
       impact: 'Prevents building what nobody wants',
-      highlight: 'Data-Backed MVP Scope'
+      highlight: 'MVP Scope'
     },
     {
       id: 'execution',
       name: 'Execution',
       icon: Cpu,
       color: 'from-purple-500 to-pink-500',
-      description: 'Engineering excellence. We deploy premium, production-ready product architectures with clean code, robust database models, and scalable system structures.',
-      impact: 'Founding Partner engineering delivery',
-      highlight: 'Zero-debt MVP Launch'
+      description: 'Your partner for production-ready application. Rapid development, focuses on high-impact features.',
+      impact: 'Unsuccessful or delayed product release',
+      highlight: 'Instant MVP, faster market-feedback'
     },
     {
       id: 'optimization',
       name: 'Optimization',
       icon: Zap,
       color: 'from-pink-500 to-amber-500',
-      description: 'Operational efficiency. We refine delivery bottlenecks, perform full architecture reviews, and coach existing teams to accelerate feature ship cycles.',
-      impact: 'Reduces developmental overhead',
-      highlight: 'Continuous Delivery Tuning'
+      description: 'Operational efficiency. We refine delivery bottlenecks, audit your business performance, and coach existing teams to accelerate feature ship cycles.',
+      impact: 'buggy apps, mediocre business',
+      highlight: 'Accelerate the progress'
     },
     {
       id: 'growth',
-      name: 'Growth',
+      name: 'Scale-up',
       icon: TrendingUp,
       color: 'from-amber-500 to-emerald-500',
-      description: 'Scaling seamlessly. Transitioning technical architecture to scale, training long-term hires, and hardening services to support heavy user traffic.',
-      impact: 'Structures scalable architecture',
-      highlight: 'Product Market Hardening'
+      description: 'Transitioning technical architecture to scale, improving services to support heavy user traffic. Now we talk about Unicorn business.',
+      impact: 'Stuck and Unprofitable',
+      highlight: 'Continuous Improvement'
     }
   ];
 
@@ -123,10 +123,10 @@ export default function HeroWorkflow() {
   const activeStage = stages[activeStageIndex];
 
   const labels = {
-    pipeline: language === 'id' ? 'Alur Interaktif ANDAI' : 'ANDAI Interactive Pipeline',
+    pipeline: language === 'id' ? 'Seperti Apa ANDAI' : 'ANDAI Interactive Pipeline',
     cycle: language === 'id' ? 'Siklus Eksekusi' : 'Execution Cycle',
     phase: language === 'id' ? 'Fase Aktif 0' : 'Active Phase 0',
-    keyValue: language === 'id' ? 'Nilai Kunci' : 'Key Value',
+    keyValue: language === 'id' ? 'Sasaran' : 'Key Value',
     eliminatedRisk: language === 'id' ? 'Risiko yang Dieliminasi:' : 'Eliminated Risk:'
   };
 
