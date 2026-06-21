@@ -13,54 +13,54 @@ export default function Problem() {
   const { language } = useLanguage();
 
   const header = {
-    badge: language === 'id' ? 'Kebocoran Modal Awal' : 'The Seed Capital Leak',
-    title: language === 'id' ? 'Mengapa Startup Membuang Waktu & Uang' : 'Why Startups Waste Time and Money'
+    badge: language === 'id' ? 'Pikirkan Sebelum Memulai' : 'Food for Thought',
+    title: language === 'id' ? 'Mengapa Ide Kamu Belum Tentu Sukses Jadi Startup?' : 'Your Idea Matters the Least'
   };
 
   const problems: ProblemCard[] = language === 'id' ? [
     {
-      title: 'MVP yang Salah',
-      desc: 'Membangun terlalu banyak fitur dan teknologi rumit sebelum memvalidasi permintaan pasar yang sebenarnya.',
+      title: 'Produk yang Salah',
+      desc: 'Berpikir terlalu jauh, terpaku dengan teknologi rumit sebelum menemukan permintaan pasar yang sebenarnya.',
       icon: Layers,
-      indexCode: '01 / SCOPE'
+      indexCode: '01 / PRODUCT'
     },
     {
-      title: 'Tim yang Salah',
-      desc: 'Merekrut pengembang berbiaya tinggi atau kontrak agensi sebelum menjabarkan spesifikasi teknis yang konkret.',
+      title: 'Eksekusi yang Buruk',
+      desc: 'Merekrut pengembang berbiaya tinggi, membuat terlalu banyak fitur, peluncuran produk terlambat dan performa jelek.',
       icon: Users,
-      indexCode: '02 / TALENT'
+      indexCode: '02 / EXECUTION'
     },
     {
-      title: 'Prioritas yang Salah',
-      desc: 'Menginvestasikan modal untuk memecahkan masalah rekayasa kustom yang tidak relevan bagi pengguna utama Anda.',
+      title: 'Gagal Bersaing',
+      desc: 'Tidak menyelesaikan masalah di market. Kompetitor melihat peluang dan menawarkan solusi yang lebih baik.',
       icon: Target,
-      indexCode: '03 / METRIC'
+      indexCode: '03 / MARKET'
     }
   ] : [
     {
-      title: 'Wrong MVP',
-      desc: 'Building too many features and complex technology stacks before validating actual market demand.',
+      title: 'Wrong Product',
+      desc: 'Thinking too much and relying on complex technology stacks before identifying actual market demand.',
       icon: Layers,
-      indexCode: '01 / SCOPE'
+      indexCode: '01 / PRODUCT'
     },
     {
-      title: 'Wrong Team',
-      desc: 'Hiring expensive developers or agency contracts prior to cataloging concrete technical specifications.',
+      title: 'Poor Execution',
+      desc: 'Hiring expensive developers or agency, shipping too many features, too slow to launch and improve the product.',
       icon: Users,
-      indexCode: '02 / TALENT'
+      indexCode: '02 / EXECUTION'
     },
     {
-      title: 'Wrong Priorities',
-      desc: 'Investing capital in solving custom engineering problems that are irrelevant to your primary user.',
+      title: 'Uncompetitive Business',
+      desc: 'Investing capital in irrelevant problem. Competitors exploit the opportunity and offer much better and relevant solution.',
       icon: Target,
-      indexCode: '03 / METRIC'
+      indexCode: '03 / MARKET'
     }
   ];
 
   const callout = {
     bold: language === 'id' ? 'sebelum pengembangan dimulai.' : 'before development starts.',
     text: language === 'id' ? 'Sebagian besar kegagalan startup terjadi ' : 'Most startup failures happen ',
-    button: language === 'id' ? 'Nilai Blueprint Pembangunan Anda' : 'Assess Your Build Blueprint'
+    button: language === 'id' ? 'Periksa lagi Ide Anda' : 'Assess Your Idea'
   };
 
   return (

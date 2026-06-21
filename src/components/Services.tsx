@@ -15,49 +15,49 @@ export default function Services() {
   const { language } = useLanguage();
 
   const header = {
-    badge: language === 'id' ? 'Pengiriman & Eksekusi Produk' : 'Product Delivery & Execution',
-    title: language === 'id' ? 'Bagaimana ANDAI Membantu' : 'How ANDAI Helps',
+    badge: language === 'id' ? 'Ide Menjadi Produk' : 'Idea Delivery & Execution',
+    title: language === 'id' ? 'ANDAI Membangun dan Meluncurkan Produk Startup' : 'ANDAI Builds and Launches Startup',
     desc: language === 'id' 
-      ? 'Kami bukan agensi outsourcing biasa. Kami bertindak sebagai mitra pembangunan khusus, mengelola perencanaan fidelitas tinggi serta kepemimpinan teknis agar Anda dapat menavigasi risiko dengan aman.'
-      : 'We are not a generic outsourcing agency. We serve as a dedicated building partner, managing high-fidelity planning and technical leadership so you navigate risks safely.'
+      ? 'Kami bukan agensi digital. Kami bertindak sebagai mitra eksekusi startup, merancang konsep ide hingga menjadi produk ready-to-market sehingga Kamu yakin untuk membangun startup.'
+      : 'We are not a digital agency. We act as a dedicated startup partner, managing idea conception for Indonesian Market so you navigate risks safely.'
   };
 
   const services: ServiceCard[] = language === 'id' ? [
     {
-      title: 'Pencarian Produk',
-      tagline: 'Mengubah ide startup mentah menjadi rencana eksekusi fidelitas tinggi yang siap dijalankan.',
+      title: 'Product Discovery',
+      tagline: 'Sesi pencarian dan perumusan konsep startup. Menghasilkan rencana eksekusi yang realistis sampai ide menjadi aplikasi level produksi.',
       icon: Clipboard,
       features: [
         'Definisi Masalah',
-        'Riset Pengguna',
-        'Ruang Lingkup MVP',
-        'Peta Jalan Produk'
+        'Persona Pengguna',
+        'Konsep MVP',
+        'Rencana Pengembangan Produk'
       ],
       gradient: 'from-blue-600 to-indigo-600',
       badge: 'TAHAP 1'
     },
     {
-      title: 'Mitra Utama Pendiri',
-      tagline: 'Kemampuan rekayasa strategis dan arsitektur perangkat lunak yang disesuaikan untuk Anda.',
+      title: 'Founding Partner',
+      tagline: 'Partner untuk mengeksekusi ide startup. Fokus pada pengembangan dari skala MVP untuk menemukan aplikasi yang disukai pengguna.',
       icon: Code2,
       features: [
         'Perencanaan Teknis',
         'Eksekusi Produk',
-        'Penerapan Ide',
-        'Rekomendasi Penyempurnaan'
+        'Peluncuran Aplikasi',
+        'Iterasi Sesuai Market Feedback'
       ],
       gradient: 'from-purple-600 to-pink-600',
       badge: 'TAHAP 2'
     },
     {
-      title: 'Studio Keandalan',
-      tagline: 'Lakukan iterasi dengan lebih cepat dan kuatkan alur kerja pengembangan Anda.',
+      title: 'Optimization Studio',
+      tagline: 'Layanan untuk meningkatkan efisiensi pengembangan produk dan performa aplikasi.',
       icon: Gauge,
       features: [
-        'Tinjauan Proses',
-        'Optimasi Produk',
-        'Sesi Pendampingan',
-        'Peningkatan Pengiriman'
+        'Proses Review',
+        'Optimasi Pengembangan',
+        'Coaching Session',
+        'Peningkatan Performa'
       ],
       gradient: 'from-amber-600 to-orange-600',
       badge: 'TAHAP 3'
@@ -65,37 +65,37 @@ export default function Services() {
   ] : [
     {
       title: 'Product Discovery',
-      tagline: 'Transform unrefined startup ideas into high-fidelity, actionable execution plans.',
+      tagline: 'A structured product discovery engagement designed to transform startup ideas into actionable execution plans.',
       icon: Clipboard,
       features: [
         'Problem Definition',
-        'User Research',
+        'User Persona',
         'MVP Scope',
-        'Product Roadmap'
+        'Development Roadmap'
       ],
       gradient: 'from-blue-600 to-indigo-600',
       badge: 'STAGE 1'
     },
     {
       title: 'Founding Partner',
-      tagline: 'Strategic engineering capabilities and software architecture at your disposal.',
+      tagline: 'Your startup execution partner. We focus on rapid and realistic development, evolving MVP into production-ready application level',
       icon: Code2,
       features: [
         'Technical Planning',
         'Product Execution',
         'Idea Deployment',
-        'Improvement Recommendation'
+        'Market Feedback Iteration'
       ],
       gradient: 'from-purple-600 to-pink-600',
       badge: 'STAGE 2'
     },
     {
       title: 'Optimization Studio',
-      tagline: 'Iterate faster and harden your development workflow patterns for scale.',
+      tagline: 'An ongoing advisory service focused on improving product development efficiency.',
       icon: Gauge,
       features: [
         'Process Review',
-        'Product Optimization',
+        'Technical Optimization',
         'Coaching Session',
         'Delivery Improvements'
       ],
@@ -104,7 +104,7 @@ export default function Services() {
     }
   ];
 
-  const selectCTA = language === 'id' ? 'Pilih Blok Kemitraan' : 'Select Partnership Block';
+  const selectCTA = (language) === 'id' ? 'Pilih ' : 'Go To';
 
   return (
     <section id="services-section" className="py-24 bg-white dark:bg-neutral-950 scroll-mt-20">
@@ -141,14 +141,14 @@ export default function Services() {
                 <div className={`absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r ${srv.gradient}`} />
                 
                 <div>
-                  <div className="flex justify-between items-center mb-6">
+                  {/* <div className="flex justify-between items-center mb-6">
                     <span className="font-mono text-[10px] uppercase font-extrabold tracking-widest text-neutral-400">
                       {srv.badge}
                     </span>
                     <div className="w-10 h-10 rounded-xl bg-purple-50 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 border border-purple-100 dark:border-purple-900/30 flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
-                  </div>
+                  </div> */}
 
                   <h3 className="text-xl md:text-2xl font-display font-bold text-neutral-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
                     {srv.title}
@@ -179,7 +179,7 @@ export default function Services() {
                     onClick={() => document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' })}
                     className="w-full text-center text-xs font-mono uppercase tracking-wider font-extrabold text-neutral-800 dark:text-neutral-200 border border-neutral-250 dark:border-neutral-850 rounded-xl py-3 group-hover:bg-neutral-900 group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-neutral-950 group-hover:border-neutral-900 dark:group-hover:border-white transition-all duration-300 cursor-pointer"
                   >
-                    {selectCTA}
+                    {`${selectCTA} ${ srv.title }`}
                   </button>
                 </div>
               </motion.div>
