@@ -51,7 +51,7 @@ export default function Services() {
     },
     {
       title: 'Optimization Studio',
-      tagline: 'Layanan untuk meningkatkan efisiensi pengembangan produk dan performa aplikasi.',
+      tagline: 'Layanan untuk meningkatkan efisiensi pengembangan produk dan performa aplikasi. Membuat startup kamu lebih baik.',
       icon: Gauge,
       features: [
         'Proses Review',

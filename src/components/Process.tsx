@@ -15,69 +15,69 @@ export default function Process() {
 
   const header = {
     badge: language === 'id' ? 'Buku Panduan ANDAI' : 'The ANDAI Playbook',
-    title: language === 'id' ? 'Cara Kerja Kami' : 'How It Works',
+    title: language === 'id' ? 'Rahasia Dapur ANDAI' : 'How It Works',
     desc: language === 'id' 
-      ? 'Garis waktu eksekusi kami yang terstruktur dan rendah risiko dirancang untuk mengamankan modal Anda sambil tetap mempertahankan kecepatan pengembangan.'
-      : 'Our structured, low-risk execution timeline designed to insulate your capital while maintaining velocity.'
+      ? 'Kami punya struktur kerja yang dirancang untuk menjaga resiko serendah mungkin sembari mengembangkan produk untuk ide startup Kamu.'
+      : 'Our structured and execution processes designed to insulate your risk while transforming your idea into a startup product.'
   };
 
   const steps: Step[] = language === 'id' ? [
     {
       stepNum: '01',
-      title: 'Diskusikan Ide Anda',
-      desc: 'Bagikan visi startup, sasaran produk, atau target pasar Anda dalam sesi lokakarya kick-off yang interaktif.',
+      title: 'Eksplorasi Ide',
+      desc: 'Kita bahas ide Kamu dan definisikan masalah, target pengguna, dan format produk dalam sesi diskusi interaktif.',
       icon: MessageSquare,
-      tag: 'KONSULTASI'
+      tag: 'DISCOVERY'
     },
     {
       stepNum: '02',
-      title: 'Dapatkan Analisis Pencarian Produk Anda',
-      desc: 'ANDAI menyusun laporan analisis konkret tepercaya yang mencakup batasan rilis MVP, rancangan teknologi, dan uji ketahanan risiko.',
+      title: 'Merencanakan Produk',
+      desc: 'ANDAI menganalisis ide dan menyusun batasan rilis MVP, teknologi yang dibuthukan, serta menyampaikan rencana pengembangan produk.',
       icon: FileSpreadsheet,
       tag: 'PERENCANAAN'
     },
     {
       stepNum: '03',
-      title: 'Bermitra dengan ANDAI dan Bangun Produknya',
-      desc: 'Luncurkan rilis perangkat lunak profesional dalam sprint agile. Kami mengelola arsitektur sistem, elemen desain, dan struktur basis data.',
+      title: 'Berpartner dan Bangun Produknya',
+      desc: 'Kami memikirkan arsitektur sistem, membangun dan meluncurkan aplikasi dengan kemampuan teknis yang memadai.',
       icon: Hammer,
-      tag: 'KEMITRAAN BANGUN'
+      tag: 'EKSEKUSI'
     },
     {
       stepNum: '04',
-      title: 'Eksekusi dengan Percaya Diri',
-      desc: 'Luncurkan solusi digital terukur tanpa utang teknis, didukung oleh pola optimasi terbukti dan pendampingan jangka panjang.',
+      title: 'Percaya Diri',
+      desc: 'Menyempurnakan produk dan memperbaiki error sesuai market feedback. Yakin untuk menawarkan produk yang benar-benar mengatasi masalah pengguna.',
       icon: Award,
-      tag: 'PAGELARAN PASAR'
+      tag: 'OPTIMIZATION'
     }
   ] : [
     {
       stepNum: '01',
-      title: 'Discuss Your Idea',
-      desc: 'Share your startup vision, product goals, or target demographic constraints during an interactive kick-off workshop.',
+      title: 'Idea Exploration',
+      desc: 'Share your idea. Find the problem, user target, and product plan in an interactive discussion workshop.',
       icon: MessageSquare,
-      tag: 'CONSULTATION'
+      tag: 'DISCOVERY'
     },
     {
       stepNum: '02',
       title: 'Receive Your Product Discovery Analysis',
-      desc: 'ANDAI generates a concrete analysis report including MVP boundaries, technical stack outlines, and risk stress-tests.',
+      desc: 'ANDAI generates a concrete analysis report including MVP boundaries, technical stack outlines, and development plan.',
       icon: FileSpreadsheet,
       tag: 'PLANNING'
     },
     {
       stepNum: '03',
-      title: 'Partner with ANDAI and build the product',
-      desc: 'Deploy professional software updates in agile sprints. We handle system architectures, design elements, and database structures.',
+      title: 'Partner and build the product',
+      desc: 'Deploy professional application. We build a product with an excellent technical capabilities.',
       icon: Hammer,
       tag: 'CO-BUILDING'
     },
     {
       stepNum: '04',
       title: 'Execute With Confidence',
-      desc: 'Launch a scalable digital solution with zero technical state debt, backed by proven optimization patterns and long-term mentorship.',
+      desc: 'Refine the product and fix error based on the market feedback, backed by proven optimization patterns and long-term mentorship.',
       icon: Award,
-      tag: 'GO-TO-MARKET'
+      tag: 'OPTIMIZATION'
     }
   ];
 
@@ -87,9 +87,9 @@ export default function Process() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-20">
-          <span className="font-mono text-xs font-bold text-slate-400 dark:text-neutral-500 uppercase tracking-widest block mb-2">
+          {/* <span className="font-mono text-xs font-bold text-slate-400 dark:text-neutral-500 uppercase tracking-widest block mb-2">
             {header.badge}
-          </span>
+          </span> */}
           <h2 className="text-3xl md:text-5xl font-display font-extrabold text-neutral-900 dark:text-white tracking-tight">
             {header.title}
           </h2>
